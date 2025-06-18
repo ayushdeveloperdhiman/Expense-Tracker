@@ -45,7 +45,7 @@ function updateUi() {
     incomeTotal += transaction.amount;
     const li = document.createElement("li");
     li.innerHTML = `${transaction.date} - ${transaction.description} (${transaction.category}): ₹${transaction.amount}
-      <button onclick="deleteIncome(${transaction.id})">❌</button>`;
+      <button onclick="deleteIncome(${transaction.id})">Delete</button>`;
 
     incomeTransaction.appendChild(li);
   });
@@ -54,7 +54,7 @@ function updateUi() {
     expenseTotal += transaction.amount;
     const li = document.createElement("li");
     li.innerHTML = `${transaction.date} - ${transaction.description} (${transaction.category}): ₹${transaction.amount}
-      <button onclick="deleteExpense(${transaction.id})">❌</button>`;
+      <button onclick="deleteExpense(${transaction.id})">Delete</button>`;
 
     expenseTransaction.appendChild(li);
   });
