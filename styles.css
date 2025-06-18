@@ -1,0 +1,105 @@
+body{
+    background-color: #222831;
+    color: white;
+    padding: 20px;
+    align-items: center;
+}
+
+#summary{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+#summary h2{
+    background-color: #393E46;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.income-expense{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.income, .expense{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: #393E46;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 5px black;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label{
+    font-weight: 800;
+}
+
+input, select{
+    padding: 10px;
+    border: 1px solid #222831;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+button{
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    color: aliceblue;
+}
+
+
+.income form button{
+    background-color: rgba(37, 172, 37, 0.688);
+    transition: background-color 0.2s ease;
+}
+
+.expense form button{
+    background-color: rgba(161, 34, 34, 0.793);
+    transition: background-color 0.2s ease;
+}
+
+.income form button:hover{
+    background-color: rgba(20, 95, 20, 0.688);
+}
+
+.expense form button:hover{
+    background-color: rgba(103, 24, 24, 0.793);
+}
+
+ul{
+    background-color: #393E46;
+    padding-left: 0;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .income-expense {
+    flex-direction: column;
+  }
+
+  #summary {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #summary h2 {
+    width: 100%;
+    text-align: center;
+  }
+}
