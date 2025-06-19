@@ -95,7 +95,11 @@ li{
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
+    box-shadow: 0.5px 0.5px 1px 1px black;
+     align-items: center;
+    font-weight: bolder;
 }
+
 li:nth-child(even){
     
     background-color: #495361;
@@ -108,7 +112,21 @@ li:nth-child(odd){
 
 li button{
     padding: 10px 15px;
-    color: red;
+    color: white;
+    background-color: rgba(161, 34, 34, 0.793);
+    transition: background-color 0.2s ease;
+}
+
+li button:hover{
+    background-color: rgba(103, 24, 24, 0.793);
+}
+
+.income-transactions ul li{
+    color: rgba(0, 255, 0, 0.688);
+}
+
+.expense-transactions ul li{
+    color: rgba(255, 0, 0, 0.793);
 }
 
 @media (max-width: 768px) {
